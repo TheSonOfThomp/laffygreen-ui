@@ -16,9 +16,17 @@ const wobble = keyframes`
   }
 `;
 
+export const innerStyles = css`
+  display: flex;
+  justify-content: center;
+  position: relative;
+`;
+
 export const toastStyles = css`
   position: absolute;
-  inset: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
   scale: 0.3;
   transform-origin: top;
   translate: 0% 0%;
@@ -37,8 +45,6 @@ export const bodyStyles = css`
   left: 50%;
   translate: -50% -50%;
   color: ${palette.black};
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 60px;
+  padding: 0 20px;
 `;
