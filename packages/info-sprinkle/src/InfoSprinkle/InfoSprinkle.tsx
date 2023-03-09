@@ -8,10 +8,9 @@ import { palette } from '@leafygreen-ui/palette';
 import { InfoSprinkleProps } from './InfoSprinkle.types';
 import { Sprinkle, SprinkleProps } from './Sprinkle';
 
-const sprinkleInterval = 200;
 const sprinkleTimeout = 8_000;
 
-export function InfoSprinkle({ children, ...props }: InfoSprinkleProps) {
+export function InfoSprinkle({ rate = 200, ...props }: InfoSprinkleProps) {
   const [sprinkles, setSprinkles] = useState<Record<string, SprinkleProps>>({});
   const [timerId, setTimerId] = useState<NodeJS.Timer>();
 
@@ -40,7 +39,7 @@ export function InfoSprinkle({ children, ...props }: InfoSprinkleProps) {
           return _s;
         });
       }, sprinkleTimeout);
-    }, sprinkleInterval);
+    }, rate);
     setTimerId(id);
   }
 
@@ -55,8 +54,18 @@ export function InfoSprinkle({ children, ...props }: InfoSprinkleProps) {
       className={css`
         position: relative;
         cursor: pointer;
+        display: inline;
+        height: 16px;
+        width: 16px;
       `}
+      {...props}
     >
+      <Icon
+        glyph="InfoWithCircle"
+        fill={palette.gray.base}
+        onMouseEnter={startSprinkles}
+        onMouseLeave={stopSprinkles}
+      />
       <div
         className={css`
           position: absolute;
@@ -68,13 +77,6 @@ export function InfoSprinkle({ children, ...props }: InfoSprinkleProps) {
           return <Sprinkle key={key} {...sprinkleProps} />;
         })}
       </div>
-      {children}
-      <Icon
-        glyph="InfoWithCircle"
-        fill={palette.gray.base}
-        onMouseEnter={startSprinkles}
-        onMouseLeave={stopSprinkles}
-      />
     </div>
   );
 }
