@@ -1,2 +1,2 @@
 export { NameInput } from './NameInput';
-export { NameInputProps } from './NameInput.types';
+export type { NameInputProps } from './NameInput.types';

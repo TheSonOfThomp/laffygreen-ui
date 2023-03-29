@@ -1,28 +1,37 @@
-
-  {
-    "name": "@laffygreen-ui/volume-picker",
-    "version": "0.9.0",
-    "description": "Laffygreen UI Kit Volume Picker",
-    "main": "./dist/index.js",
-    "module": "./dist/esm/index.js",
-    "types": "./dist/index.d.ts",
-    "typesVersions": {
-      "<3.9": { "*": ["ts3.4/*"] }
-    },
-    "scripts": {
-      "build": "../../node_modules/.bin/rollup --config ../../rollup.config.js"
-    },
-    "license": "Apache-2.0",
-    "homepage": "https://github.com/thesonofthomp/leafygreen-ui/tree/laffygreen-ui/packages/volume-picker",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/thesonofthomp/leafygreen-ui/tree/laffygreen-ui"
-    },
-    "bugs": {
-      "url": "https://jira.mongodb.org/projects/PD/summary"
-    },
-    "publishConfig": {
-      "access": "public"
-    },
-    "dependencies": {}
+{
+  "name": "@laffygreen-ui/volume-picker",
+  "version": "0.9.0",
+  "description": "Laffygreen UI Kit Volume Picker",
+  "main": "./dist/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "<3.9": {
+      "*": [
+        "ts3.4/*"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "../../node_modules/.bin/rollup --config ../../rollup.config.js"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/thesonofthomp/leafygreen-ui/tree/laffygreen-ui/packages/volume-picker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thesonofthomp/leafygreen-ui/tree/laffygreen-ui"
+  },
+  "bugs": {
+    "url": "https://jira.mongodb.org/projects/PD/summary"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@leafygreen-ui/button": "^20.0.2",
+    "@leafygreen-ui/emotion": "^4.0.3",
+    "@leafygreen-ui/palette": "^4.0.0",
+    "@leafygreen-ui/typography": "^16.1.0",
+    "lodash": "^4.17.21"
   }
+}

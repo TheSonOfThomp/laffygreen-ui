@@ -1,2 +1,2 @@
 export { VolumePicker } from './VolumePicker';
-export { VolumePickerProps } from './VolumePicker.types';
+export type { VolumePickerProps } from './VolumePicker.types';

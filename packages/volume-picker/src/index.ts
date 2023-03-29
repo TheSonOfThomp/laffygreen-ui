@@ -1,1 +1,1 @@
-export { VolumePicker, VolumePickerProps } from './VolumePicker';
+export { VolumePicker, type VolumePickerProps } from './VolumePicker';

@@ -1,28 +1,40 @@
-
-  {
-    "name": "@laffygreen-ui/loader",
-    "version": "0.9.0",
-    "description": "Laffygreen UI Kit Loader",
-    "main": "./dist/index.js",
-    "module": "./dist/esm/index.js",
-    "types": "./dist/index.d.ts",
-    "typesVersions": {
-      "<3.9": { "*": ["ts3.4/*"] }
-    },
-    "scripts": {
-      "build": "../../node_modules/.bin/rollup --config ../../rollup.config.js"
-    },
-    "license": "Apache-2.0",
-    "homepage": "https://github.com/thesonofthomp/leafygreen-ui/tree/laffygreen-ui/packages/loader",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/thesonofthomp/leafygreen-ui/tree/laffygreen-ui"
-    },
-    "bugs": {
-      "url": "https://jira.mongodb.org/projects/PD/summary"
-    },
-    "publishConfig": {
-      "access": "public"
-    },
-    "dependencies": {}
+{
+  "name": "@laffygreen-ui/loader",
+  "version": "0.9.0",
+  "description": "Laffygreen UI Kit Loader",
+  "main": "./dist/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "<3.9": {
+      "*": [
+        "ts3.4/*"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "../../node_modules/.bin/rollup --config ../../rollup.config.js"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/thesonofthomp/leafygreen-ui/tree/laffygreen-ui/packages/loader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thesonofthomp/leafygreen-ui/tree/laffygreen-ui"
+  },
+  "bugs": {
+    "url": "https://jira.mongodb.org/projects/PD/summary"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@leafygreen-ui/emotion": "^4.0.3",
+    "@leafygreen-ui/leafygreen-provider": "^3.1.1",
+    "@leafygreen-ui/logo": "^8.0.1",
+    "@leafygreen-ui/palette": "^4.0.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@leafygreen-ui/lib": "^10.3.0"
   }
+}

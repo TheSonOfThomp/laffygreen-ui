@@ -1,4 +1,39 @@
 {
   "files": [],
-  "include": []
+  "include": [],
+  "references": [
+    {
+      "path": "./packages/cancel-button"
+    },
+    {
+      "path": "./packages/date-picker"
+    },
+    {
+      "path": "./packages/icon"
+    },
+    {
+      "path": "./packages/info-sprinkle"
+    },
+    {
+      "path": "./packages/loader"
+    },
+    {
+      "path": "./packages/morse-input"
+    },
+    {
+      "path": "./packages/name-input"
+    },
+    {
+      "path": "./packages/number-input"
+    },
+    {
+      "path": "./packages/phone-number-input"
+    },
+    {
+      "path": "./packages/toast"
+    },
+    {
+      "path": "./packages/volume-picker"
+    }
+  ]
 }

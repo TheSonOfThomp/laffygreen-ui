@@ -1,3 +1,2 @@
-
-export  { InfoSprinkle } from './InfoSprinkle';
-export { InfoSprinkleProps } from './InfoSprinkle.types';
+export { InfoSprinkle } from './InfoSprinkle';
+export type { InfoSprinkleProps } from './InfoSprinkle.types';

@@ -1,1 +1,4 @@
-export { PhoneNumberInput, PhoneNumberInputProps } from './PhoneNumberInput';
+export {
+  PhoneNumberInput,
+  type PhoneNumberInputProps,
+} from './PhoneNumberInput';

@@ -1,1 +1,1 @@
-export { CancelButton, CancelButtonProps } from './CancelButton';
+export { CancelButton, type CancelButtonProps } from './CancelButton';

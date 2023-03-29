@@ -1,2 +1,2 @@
 export { CancelButton } from './CancelButton';
-export { CancelButtonProps } from './CancelButton.types';
+export type { CancelButtonProps } from './CancelButton.types';

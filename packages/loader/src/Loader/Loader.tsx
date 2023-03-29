@@ -49,6 +49,7 @@ export function Loader({ height = 500, width = 500, ...rest }: LoaderProps) {
         .map(([_, fill]) => fill),
     );
     const newFill = sample([...colors]) || palette.green.base;
+    // @ts-ignore
     setFill(newFill);
   }, [darkMode]);
 

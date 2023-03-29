@@ -1,1 +1,1 @@
-export { NameInput, NameInputProps } from './NameInput';
+export { NameInput, type NameInputProps } from './NameInput';
