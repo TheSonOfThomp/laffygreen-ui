@@ -3,6 +3,7 @@ import React from 'react';
 import { bodyStyles, innerStyles, toastStyles } from './Toast.styles';
 import { ToastProps } from './Toast.types';
 
+/** A small piece of information */
 export function Toast({ body }: ToastProps) {
   return (
     <div className={toastStyles}>

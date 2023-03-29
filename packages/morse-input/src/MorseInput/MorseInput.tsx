@@ -28,7 +28,7 @@ const Beeper = new Synth({
 }).toDestination();
 
 /**
- * Enter text in Morse Code.
+ * For use on very low bandwidth machines.
  *
  * Press the space bar to enter morse code characters
  */
@@ -199,6 +199,7 @@ export function MorseInput({
         onKeyUp={handleKeyUp}
         value={getValue()}
         label={label ? textToMorse(label) : ''}
+        description="Use the space bar"
       />
       <IconButton
         aria-label="play"

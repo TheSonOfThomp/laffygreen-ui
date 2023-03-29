@@ -2,6 +2,7 @@ import React from 'react';
 
 import { css } from '@leafygreen-ui/emotion';
 
+/** *THE* Icon */
 export function Icon() {
   return (
     <span>

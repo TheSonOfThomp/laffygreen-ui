@@ -6,6 +6,7 @@ import { css } from '@leafygreen-ui/emotion';
 import { palette } from '@leafygreen-ui/palette';
 import { Description } from '@leafygreen-ui/typography';
 
+/** Enables the user to pick the volume from their surroundings */
 export function VolumePicker() {
   const playerRef = useRef<HTMLAudioElement>(null);
   const localAnalyzer = useRef<AnalyserNode>();

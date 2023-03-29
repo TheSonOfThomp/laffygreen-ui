@@ -10,6 +10,7 @@ import { Sprinkle, SprinkleProps } from './Sprinkle';
 
 const sprinkleTimeout = 8_000;
 
+/** Little sprinkles of info and delight */
 export function InfoSprinkle({ rate = 200, ...props }: InfoSprinkleProps) {
   const [sprinkles, setSprinkles] = useState<Record<string, SprinkleProps>>({});
   const [timerId, setTimerId] = useState<NodeJS.Timer>();

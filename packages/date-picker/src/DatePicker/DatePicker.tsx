@@ -16,7 +16,7 @@ const cardSize = 256;
 const dayInMillis = 1000 * 60 * 60 * 24; // ms/s * s/m * m/h * h/d
 
 /**
- * A fun way to pick the date!
+ * For _quickly_ picking the date!
  */
 export function DatePicker({
   value: valueProp = '2023-01-02',

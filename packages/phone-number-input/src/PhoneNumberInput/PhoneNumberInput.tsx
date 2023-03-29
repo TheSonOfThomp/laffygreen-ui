@@ -40,6 +40,7 @@ export function PhoneNumberInput({
   return (
     <div
       className={css`
+        width: 512px;
         min-width: 200px;
       `}
     >

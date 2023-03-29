@@ -16,6 +16,7 @@ import { LoaderProps } from './Loader.types';
 
 let lastFrameTime = 0;
 
+/** When things take longer than expected. Will it hit the corner?? */
 export function Loader({ height = 500, width = 500, ...rest }: LoaderProps) {
   const { darkMode } = useDarkMode();
   const containerRef = useRef<HTMLDivElement>(null);

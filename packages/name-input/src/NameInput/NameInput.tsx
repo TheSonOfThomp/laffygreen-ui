@@ -8,6 +8,9 @@ import IconButton from '@leafygreen-ui/icon-button';
 import TextInput from '@leafygreen-ui/text-input';
 
 import { NameInputProps } from './NameInput.types';
+/**
+ * A type-safe input for names
+ */
 export function NameInput({
   gender,
   nameType,
